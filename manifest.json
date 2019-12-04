@@ -1,0 +1,21 @@
+{
+  "author": "cat.alucardo@gmail.com",
+  "manifest_version": 2,
+  "name": "RSS list in console",
+  "version": "1",
+  "description": "get a list of RSS and leave it in the console.",
+  "permissions": ["activeTab"],
+  "icons": {
+	"48": "c4-rss.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "console-log-rss.js"
+      ]
+    }
+  ]
+}
